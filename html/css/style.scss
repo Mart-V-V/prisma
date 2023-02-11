@@ -54,7 +54,7 @@ body {
         align-items: center;
         margin-top: 30px;
         a {
-            font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1900 - 320)));;
+            font-size: calc(14px + (28 - 14) * ((100vw - 600px) / (1600 - 600)));;
             color: #0b0a0a;
             &:first-child {
                 margin-right: 10px;

@@ -40,7 +40,7 @@ body {
             justify-content: space-between;
             li {
                 a {
-                    font-size: 30px;
+                    font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1900 - 320)));
                     text-transform: uppercase;
                     color: #433a3a;
                     white-space: nowrap;
@@ -54,7 +54,7 @@ body {
         align-items: center;
         margin-top: 30px;
         a {
-            font-size: 28px;
+            font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1900 - 320)));;
             color: #0b0a0a;
             &:first-child {
                 margin-right: 10px;
@@ -72,7 +72,7 @@ body {
     &_title{
         padding-left: 6rem;
         padding-top: 11rem;
-        font-size: 60px;
+        font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1900 - 320)));
         font-weight: bold;
         line-height: normal;
         color: #fff;

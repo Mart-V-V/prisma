@@ -79,8 +79,32 @@ body {
         text-align: center;
     }
 }
-.block_all {
-
+.block_art {
+    width: 100%;
+    padding: 39px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 60px;
+    &-item {
+        width: 100%;
+        height: 214px;
+        display: flex;
+        align-items: center;
+        padding-left: 200px;
+        border-radius: 5px;;
+        box-shadow: 5px 5px 5px rgba($color: #000, $alpha: .6);
+        font-size: 24px;
+        color: #433a3a;
+        &.art1 {
+            background: url(/html/img/art-1.png) no-repeat 1rem center;
+        }
+        &.art2 {
+            background: url(/html/img/art-2.png) no-repeat 1rem center;
+        }
+        &.art3 {
+            background: url(/html/img/art-3.png) no-repeat 1rem center;
+        }
+    }
 }
 .subscribe {
 

@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prisma</title>
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="simple-adaptive-slider/css/simple-adaptive-slider.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="simple-adaptive-slider/js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.reviews', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
 </head>
 <body>
     <div class="header">
-        <div class="header_left"><a href="/"><img src="/html/img/logo_1.png"></a></div>
+        <div class="header_left"><a href="/"><img src="img/logo_1.png"></a></div>
         <div class="header_right">
             <div class="header_menu-top">
                 <ul>
@@ -25,7 +39,7 @@
             </div>
             <div class="header_contact">
                 <a href="tel:+79955002442">+7 (995) 500-24-42</a>
-                <a href=""><img src="/html/img/feedback-btn.png"></a>
+                <a href=""><img src="img/feedback-btn.png"></a>
             </div>
         </div>
     </div>
@@ -70,7 +84,7 @@
             <form action="">
                 <input type="text" placeholder="имя фамилия">
                 <input type="text" placeholder="телефон для связи">
-                <input src="/html/img/subscribe-btn.png" type="image" value="">
+                <input src="img/subscribe-btn.png" type="image" value="">
             </form>
         </div>
     </div>
@@ -100,8 +114,42 @@
             </div>
         </div>
     </div>
-    <div class="reviews">reviews</div>
-    <div class="maps">maps</div>
+    <div class="reviews">
+        <div class="reviews-title">отзывы родителей</div>
+        <div class="reviews__wrapper">
+            <div class="reviews-items">
+                <div class="reviews-item">
+                    <div class="reviews-item-desc">1 - Праздновали день рождения в "Призме" - все очень понравилось!<br>Во-первых, большой плюс, что центр делает праздник под ключ. Площадка была оформлена в стиле черепашек ниндзя, есть горка, зона для мастер-класса и отдельная зона для питания, что невероятно удобно. Во-вторых...</div>
+                    <div class="reviews-item-date"><img src="img/reviews-ico.png" align="left"><span><b>Юлия В.</b><br>22 августа 2022</span></div>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item-desc">2 - Праздновали день рождения в "Призме" - все очень понравилось!<br>Во-первых, большой плюс, что центр делает праздник под ключ. Площадка была оформлена в стиле черепашек ниндзя, есть горка, зона для мастер-класса и отдельная зона для питания, что невероятно удобно. Во-вторых...</div>
+                    <div class="reviews-item-date"><img src="img/reviews-ico.png" align="left"><span><b>Юлия В.</b><br>22 августа 2022</span></div>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item-desc">3 - Праздновали день рождения в "Призме" - все очень понравилось!<br>Во-первых, большой плюс, что центр делает праздник под ключ. Площадка была оформлена в стиле черепашек ниндзя, есть горка, зона для мастер-класса и отдельная зона для питания, что невероятно удобно. Во-вторых...</div>
+                    <div class="reviews-item-date"><img src="img/reviews-ico.png" align="left"><span><b>Юлия В.</b><br>22 августа 2022</span></div>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item-desc">4 - Праздновали день рождения в "Призме" - все очень понравилось!<br>Во-первых, большой плюс, что центр делает праздник под ключ. Площадка была оформлена в стиле черепашек ниндзя, есть горка, зона для мастер-класса и отдельная зона для питания, что невероятно удобно. Во-вторых...</div>
+                    <div class="reviews-item-date"><img src="img/reviews-ico.png" align="left"><span><b>Юлия В.</b><br>22 августа 2022</span></div>
+                </div>
+                <div class="reviews-item">
+                    <div class="reviews-item-desc">5 - Праздновали день рождения в "Призме" - все очень понравилось!<br>Во-первых, большой плюс, что центр делает праздник под ключ. Площадка была оформлена в стиле черепашек ниндзя, есть горка, зона для мастер-класса и отдельная зона для питания, что невероятно удобно. Во-вторых...</div>
+                    <div class="reviews-item-date"><img src="img/reviews-ico.png" align="left"><span><b>Юлия В.</b><br>22 августа 2022</span></div>
+                </div>
+            </div>
+        </div>
+        <button class="reviews__btn reviews__btn_prev" role="button" data-slide="prev"></button>
+        <button class="reviews__btn reviews__btn_next" role="button" data-slide="next"></button>
+    </div>
+    <div class="maps">
+        <div class="maps-title">наши контакты</div>
+        <div class="maps-items">
+            <div class="maps-left"><img src="img/maps.jpg"></div>
+            <div class="maps-right"></div>
+        </div>
+    </div>
     <div class="footer">footer</div>
 </body>
 </html>

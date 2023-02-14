@@ -13,14 +13,13 @@
 }
 
 /* стили для wrapper */
-.reviews__wrapper {
+.reviews-wrapper {
   position: relative;
   overflow: hidden;
-  background-color: #eee;
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
-.reviews__items {
+.reviews-items {
   display: flex;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -29,7 +28,7 @@
 }
 
 /* стили для элементов */
-.reviews__item {
+.reviews-item {
   position: relative;
   flex: 0 0 100%;
   max-width: 100%;
@@ -39,16 +38,15 @@
 }
 
 /* кнопки Prev и Next */
-.reviews__btn {
+.reviews-btn {
   position: absolute;
-  top: calc( 50% + 50px );
+  top: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 3rem;
   height: 4rem;
   color: #fff;
-  background: rgb(0 0 0 / 10%);
   border: none;
   outline: none;
   transform: translateY(-50%);
@@ -57,27 +55,27 @@
   user-select: none;
 }
 
-.reviews__btn_hide {
+.reviews-btn_hide {
   display: none;
 }
 
-.reviews__btn:hover,
-.reviews__btn:focus {
+.reviews-btn:hover,
+.reviews-btn:focus {
   color: #fff;
   text-decoration: none;
   border: none;
   opacity: 0.7;
 }
 
-.reviews__btn_prev {
+.reviews-btn_prev {
   left: 0;
 }
 
-.reviews__btn_next {
+.reviews-btn_next {
   right: 0;
 }
 
-.reviews__btn::before {
+.reviews-btn::before {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -86,16 +84,16 @@
   background-size: 100% 100%;
 }
 
-.reviews__btn_prev::before {
+.reviews-btn_prev::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
-.reviews__btn_next::before {
+.reviews-btn_next::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 /* Индикаторы */
-.reviews__indicators {
+.reviews-indicators {
   position: absolute;
   right: 0;
   bottom: 10px;
@@ -108,21 +106,20 @@
   user-select: none;
 }
 
-.reviews__indicator {
+.reviews-indicator {
   flex: 0 1 auto;
-  width: 30px;
-  height: 2px;
+  width: 15px;
+  height: 15px;
   margin-right: 3px;
   margin-left: 3px;
-  background-color: rgb(255 255 255 / 50%);
+  border-radius: 50%;
+  background-color: #5a5252;
   background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
   cursor: pointer;
 }
 
-.reviews__indicator_active {
-  background-color: #fff;
+.reviews-indicator_active {
+  background-color: #ba0e73;
 }
 
 /* класс для отключения transition */

@@ -67,7 +67,7 @@ body {
     min-height: 739px;
     display: flex;
     align-items: center;
-    background: url(/html/img/slider.jpg);
+    background: url(../img/slider.jpg);
     background-size: cover;
     &_title{
         padding-left: 6rem;
@@ -96,13 +96,13 @@ body {
         font-size: 24px;
         color: #433a3a;
         &.art1 {
-            background: url(/html/img/art-1.png) no-repeat 1rem center;
+            background: url(../img/art-1.png) no-repeat 1rem center;
         }
         &.art2 {
-            background: url(/html/img/art-2.png) no-repeat 1rem center;
+            background: url(../img/art-2.png) no-repeat 1rem center;
         }
         &.art3 {
-            background: url(/html/img/art-3.png) no-repeat 1rem center;
+            background: url(../img/art-3.png) no-repeat 1rem center;
         }
     }
 }
@@ -133,7 +133,7 @@ body {
         line-height: 1.3;
         &.item-1 {
             grid-area: b1;
-            background: url(/html/img/img-back-test.png);
+            background: url(../img/img-back-test.png);
             background-size: cover;
         }
         &.item-2 {
@@ -144,7 +144,7 @@ body {
         }
         &.item-3 {
             grid-area: b3;
-            background: url(/html/img/img-back-test.png);
+            background: url(../img/img-back-test.png);
             background-size: cover;
         }
         &.item-4 {
@@ -153,12 +153,12 @@ body {
         }
         &.item-5 {
             grid-area: b5;
-            background: url(/html/img/img-back-test.png);
+            background: url(../img/img-back-test.png);
             background-size: cover;
         }
         &.item-6 {
             grid-area: b6;
-            background: url(/html/img/img-back-test.png);
+            background: url(../img/img-back-test.png);
             background-size: cover;
         }
         .title {
@@ -229,7 +229,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        background: url(/html/img/img-back-test.png);
+        background: url(../img/img-back-test.png);
         background-size: cover;
         box-shadow: 0 5px 5px rgba($color: #000, $alpha: .2);
         &-desc{
@@ -265,17 +265,14 @@ body {
     &-items {
         width: 822px;
         counter-reset: slide;
-        display: flex;
-        transition: transform .5s ease;
     }
     &-item {
         width: 100%;
         display: flex;
         flex-direction: column;
+        counter-increment: slide;
         flex: 0 0 100%;
         max-width: 100%;
-        position: relative;
-        counter-increment: slide;
         padding: 37px 16px;
         border-radius: 6px;
         border-left: 37px solid #e8007a;
@@ -290,16 +287,6 @@ body {
                 margin-right: 25px;
             }
         }
-        &>div::before {
-            content: counter(slide);
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            color: #fff;
-            font-style: italic;
-            font-size: 32px;
-            font-weight: bold;
-          }
     }
 
 }
@@ -320,3 +307,5 @@ body {
 .footer {
 
 }
+
+

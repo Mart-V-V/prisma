@@ -10,14 +10,14 @@
 class ItcSimpleSlider {
   // базовые классы и селекторы
   static PREFIX = 'reviews';
-  static EL_WRAPPER = `${ItcSimpleSlider.PREFIX}__wrapper`;
-  static EL_ITEM = `${ItcSimpleSlider.PREFIX}__item`;
-  static EL_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}__item_active`;
-  static EL_ITEMS = `${ItcSimpleSlider.PREFIX}__items`;
-  static EL_INDICATOR = `${ItcSimpleSlider.PREFIX}__indicator`;
-  static EL_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}__indicator_active`;
-  static EL_INDICATORS = `${ItcSimpleSlider.PREFIX}__indicators`;
-  static EL_CONTROL = `${ItcSimpleSlider.PREFIX}__btn`;
+  static EL_WRAPPER = `${ItcSimpleSlider.PREFIX}-wrapper`;
+  static EL_ITEM = `${ItcSimpleSlider.PREFIX}-item`;
+  static EL_ITEM_ACTIVE = `${ItcSimpleSlider.PREFIX}-item_active`;
+  static EL_ITEMS = `${ItcSimpleSlider.PREFIX}-items`;
+  static EL_INDICATOR = `${ItcSimpleSlider.PREFIX}-indicator`;
+  static EL_INDICATOR_ACTIVE = `${ItcSimpleSlider.PREFIX}-indicator_active`;
+  static EL_INDICATORS = `${ItcSimpleSlider.PREFIX}-indicators`;
+  static EL_CONTROL = `${ItcSimpleSlider.PREFIX}-btn`;
   // порог для переключения слайда (20%)
   static SWIPE_THRESHOLD = 20;
   // класс для отключения transition

@@ -318,14 +318,53 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         &_top {
             display: grid;
-            grid-template-columns: repeat( 2, 1fr);
+            grid-template-columns: repeat( 2, 240px);
+            gap: 10px;
         }
         &_bottom {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            padding-top: 40px;
+            font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1900 - 320)));
+            font-weight: 700;
+            color: #433a3a;
+        }
+    }
+    &-ico {
+        height: 50px;
+        padding-left: 55px;
+        align-items: center;
+        display: flex;
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1900 - 320)));
+        font-weight: 400;
+        color: #433a3a;
+        &.ico_1 {
+            background: url(../img/maps-ico-1.png) left center no-repeat;
+        }
+        &.ico_2 {
+            background: url(../img/maps-ico-2.png) left center no-repeat;
+        }
+        &.ico_3 {
+            background: url(../img/maps-ico-3.png) left center no-repeat;
+        }
+        &.ico_4 {
+            background: url(../img/maps-ico-4.png) left center no-repeat;
+        }
+        &.ico_5 {
+            background: url(../img/maps-ico-5.png) left center no-repeat;
+        }
+        &.ico_6 {
+            background: url(../img/maps-ico-6.png) left center no-repeat;
+        }
+        &.ico_7 {
+            background: url(../img/maps-ico-7.png) left center no-repeat;
+        }
+        &.ico_8 {
+            background: url(../img/maps-ico-8.png) left center no-repeat;
         }
     }
     
@@ -334,7 +373,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 30px 50px;
+    padding: 30px 42px;
     background: #e8007a;
     &-left {
         width: 30%;
@@ -347,11 +386,22 @@ body {
         ul {
             display: grid;
             grid-template-columns: repeat( 3, 1fr);
+            li a {
+                font-size: calc(14px + (25 - 14) * ((100vw - 320px) / (1900 - 320)));
+                font-weight: 400;
+                color: #fff;
+                text-transform: uppercase;
+            }
         }
     }
     &-copy {
         display: flex;
         justify-content: center;
+        padding-top: 30px;
+        font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1900 - 320)));
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
     }
 }
 

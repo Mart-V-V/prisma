@@ -79,7 +79,7 @@ body {
     background: url(../img/slider.jpg);
     background-size: cover;
     &_title{
-        padding-left: 6rem;
+        padding-left: calc(20px + (100 - 20) * ((100vw - 320px) / (1900 - 320)));
         padding-top: 11rem;
         font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1900 - 320)));
         font-weight: bold;
@@ -274,7 +274,7 @@ body {
         text-transform: uppercase;
     }
     &-items {
-        width: 822px;
+        max-width: 822px;
         counter-reset: slide;
     }
     &-item {
@@ -535,6 +535,11 @@ body {
             grid-template-rows: repeat(3, 300px);
         }
     }
+    .reviews {
+        &-items {
+            max-width: 80vw;
+        }
+    }
     .maps {
         &-items {
             flex-direction: column;
@@ -547,6 +552,44 @@ body {
             &_top {
                 display: grid;
                 grid-template-columns: repeat( 2, 200px);
+            }
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .header_contact {
+        flex-direction: column;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .block_art {
+        padding: 10px;
+    }
+    .maps {
+        &-right {
+            width: 100%;
+            &_top {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+        &-left {
+            width: 100%;
+    
+        }
+        &-right {
+            width: 100%;
+        }
+        &-menu {
+            ul {
+                display: grid;
+                grid-template-columns: 1fr;
             }
         }
     }

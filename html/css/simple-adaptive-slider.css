@@ -7,7 +7,7 @@
 /* стили для корневого элемента слайдера */
 .reviews {
   position: relative;
-  max-width: 882px;
+  /* max-width: 882px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -96,7 +96,7 @@
 .reviews-indicators {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  /* bottom: 10px; */
   left: 0;
   display: flex;
   justify-content: center;

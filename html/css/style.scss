@@ -499,7 +499,7 @@ body {
                 .mobile-burger {
                     display: block;
                     width: 40px;
-                    height: 36px;
+                    height: 40px;
                     border-radius: 20px;
                     font-size: 30px;
                     padding: 0 0 0 8px;
@@ -508,7 +508,7 @@ body {
                     top: 30px;
                     cursor: pointer;
                     &:before, &:after, span {
-                        height: 3px;
+                        height: 2px;
                         background: #fff;
                         width: 25px;
                         position: absolute;
@@ -516,13 +516,13 @@ body {
                         margin: 0 auto;
                     }
                     &:after{
-                        top: 25px;
+                        top: 27px;
                     }
                     &:before{
-                        top: 9px;
+                        top: 11px;
                     }
                     span {
-                        top: 17px;
+                        top: 19px;
                     }
                 }
             }
@@ -538,6 +538,21 @@ body {
                         letter-spacing: 1px !important;
                     }
                 }
+            }
+            .soc_ico {
+                display: flex;
+                flex-direction: row;
+                margin-top: 60px;
+                a {
+                    margin-right: 56px;
+                }
+                a:last-child {
+                    margin-right: 0;
+                }
+            }
+            .mob_phone {
+                font-size: calc(16px + (48 - 16) * ((100vw - 320px) / (1900 - 320)));
+                margin: 60px 0;
             }
         }
     }

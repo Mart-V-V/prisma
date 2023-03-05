@@ -56,6 +56,49 @@ body {
                     color: #433a3a;
                     white-space: nowrap;
                 }
+                .sub-menu {
+                    display: none;
+                    flex-direction: column;
+                }
+                &:hover {
+                    .sub {
+                        &:after {
+                            position: absolute;
+                            margin-left: 20px;
+                            content: '\00A0\00A0';
+                            background: url(../img/larrow.jpg) left top no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        z-index: 10;
+                    }
+                    .sub-menu {
+                        display: flex;
+                        position: absolute;
+                        width: 450px;
+                        background: #fff;
+                        padding: 80px 34px 34px 34px;
+                        top: 34px;
+                        margin-left: -34px;
+                        box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+                        li {
+                            height: 34px;
+                            background: url(../img/sub-menu.jpg) left center no-repeat;
+                            padding: 0 0 0 44px;
+                            display: flex;
+                            align-items: center;
+                            a {
+                                font-size: 18px;
+                                color: #433a3a;
+                                &:hover {
+                                    color: #a71873;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

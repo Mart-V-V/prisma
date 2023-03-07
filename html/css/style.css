@@ -659,6 +659,44 @@ body {
   line-height: 1;
 }
 
+.less_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px;
+}
+.less_block-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.less_block-left {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+.less_block-left img {
+  border-radius: 6px;
+  border-left: 37px solid #e8007a;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.less_block-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #433a3a;
+  font-size: calc(14px + 16 * (100vw - 320px) / 1580);
+}
+.less_block-right p {
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
 @media screen and (max-width: 1080px) {
   .header_menu-top .mobile {
     flex-direction: column;

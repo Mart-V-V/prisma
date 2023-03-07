@@ -673,7 +673,7 @@ body {
   justify-content: center;
 }
 .less_block-left {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   padding-right: 60px;
@@ -682,9 +682,11 @@ body {
   border-radius: 6px;
   border-left: 37px solid #e8007a;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
 }
 .less_block-right {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -836,6 +838,17 @@ body {
   .maps-right_top {
     display: grid;
     grid-template-columns: repeat(2, 200px);
+  }
+  .less_block-items {
+    flex-direction: column;
+  }
+  .less_block-left {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .less_block-right {
+    width: 100%;
   }
 }
 @media screen and (max-width: 660px) {

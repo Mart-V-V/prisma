@@ -459,4 +459,9 @@ body {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+}
+
+/* new css */
+.header.no_pos {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

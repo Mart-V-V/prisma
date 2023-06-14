@@ -12,7 +12,25 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         // активация слайдера
-        new ItcSimpleSlider('.reviews', {
+        new ItcSimpleSlider('#slider-1', {
+          loop: true,
+          autoplay: true,
+          interval: 4000,
+          swipe: true
+        });
+        new ItcSimpleSlider('#slider-2', {
+          loop: true,
+          autoplay: true,
+          interval: 6000,
+          swipe: true
+        });
+        new ItcSimpleSlider('#slider-3', {
+          loop: true,
+          autoplay: true,
+          interval: 6000,
+          swipe: true
+        });
+        new ItcSimpleSlider('#slider-4', {
           loop: true,
           autoplay: true,
           interval: 5000,
@@ -22,36 +40,132 @@
     </script>
 </head>
 <body>
+<div class="full-page">
+<div class="full-page_2">
     <div class="header">
         <div class="header_left"><a href="/"><img src="img/logo_1.png"></a></div>
         <div class="header_right">
             <div class="header_menu-top">
+                <div class="btn_grad mobile-burger"><span></span></div>
                 <ul>
                     <li><a href="">о центре</a></li>
-                    <li><a href="">занятия</a></li>
+                    <li><a href="" class="sub">занятия</a>
+                        <ul class="sub-menu">
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button button</a></li>
+                            <li><a href="">button</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">расписание</a></li>
-                    <li><a href="">детские праздники</a></li>
+                    <li><a href="" class="sub">детские праздники</a>
+                        <ul class="sub-menu">
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">команда</a></li>
-                    <li><a href="">новости</a></li>
+                    <li><a href="" class="sub">новости</a>
+                        <ul class="sub-menu">
+                            <li><a href="">button button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                            <li><a href="">button</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">акции</a></li>
                     <li><a href="">контакты</a></li>
                 </ul>
+                <div class="mobile">
+                    <div class="btn_grad mobile-burger"><span></span></div>
+                    <a href="/" class="logo"><img src="img/logo_1.png"></a>
+                    <ul class="menu-nav">
+                        <li><a href="">о центре</a></li>
+                        <li><a href="">занятия</a></li>
+                        <li><a href="">расписание</a></li>
+                        <li><a href="">детские праздники</a></li>
+                        <li><a href="">команда</a></li>
+                        <li><a href="">новости</a></li>
+                        <li><a href="">акции</a></li>
+                        <li><a href="">контакты</a></li>
+                    </ul>
+                    <div class="soc_ico">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                    </div>
+                    <a href="tel:+79955002442" class="mob_phone">+7 (995) 500-24-42</a>
+                    <a href="" class="btn_grad">Заказать звонок</a>
+                </div>
             </div>
             <div class="header_contact">
                 <a href="tel:+79955002442">+7 (995) 500-24-42</a>
-                <a href=""><img src="img/feedback-btn.png"></a>
+                <a href="" class="btn_grad">Заказать звонок</a>
             </div>
         </div>
     </div>
-    <div class="slider">
-        <div class="slider_title">
-            ФЕВРАЛЬСКИЕ МАСТЕР-КЛАССЫ<br>В ЧЕСТЬ ДНЯ<br>ЗАЩИТНИКА ОТЕЧЕСТВА
+    <div class="slider" id="slider-1">
+        <div class="reviews">
+            <div class="reviews-wrapper">
+            <div class="reviews-items">
+                <div class="reviews-item">
+                    <div class="slider_title">
+                        ФЕВРАЛЬСКИЕ МАСТЕР-КЛАССЫ<br>В ЧЕСТЬ ДНЯ<br>ЗАЩИТНИКА ОТЕЧЕСТВА
+                    </div>
+                </div>
+                <div class="reviews-item">
+                    <div class="slider_title">
+                        ФЕВРАЛЬСКИЕ МАСТЕР-КЛАССЫ<br>В ЧЕСТЬ ДНЯ<br>ЗАЩИТНИКА ОТЕЧЕСТВА
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
-    <div class="block_art">
-        <div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div>
-        <div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div>
-        <div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div>
+    <div class="block_art" id="slider-3">
+        <div class="reviews">
+            <div class="reviews-wrapper">
+            <div class="reviews-items">
+                <div class="reviews-item">
+                    <div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div>
+                </div>
+				
+                <div class="reviews-item">
+                    <div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
     <div class="block_grid">
         <div class="block_grid-item item-1">
@@ -84,37 +198,41 @@
             <form action="">
                 <input type="text" placeholder="имя фамилия">
                 <input type="text" placeholder="телефон для связи">
-                <input src="img/subscribe-btn.png" type="image" value="">
+                <input type="submit" class="btn_grad" value="отправить">
             </form>
         </div>
     </div>
-    <div class="news">
+    <div class="news" id="slider-4">
         <div class="news-title">
             <div class="news-title_left">Что нового</div>
             <div class="news-tile-right"><a href="">Смотреть все новости</a></div>
         </div>
-        <div class="news-items">
-            <div class="news-item">
-                <div class="news-item-desc">
-                    <span>12.01.2023</span>
-                    Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-desc">
-                    <span>12.01.2023</span>
-                    Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
-                </div>
-            </div>
-            <div class="news-item">
-                <div class="news-item-desc">
-                    <span>12.01.2023</span>
-                    Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
-                </div>
+        <div class="reviews">
+            <div class="reviews-wrapper">
+				<div class="reviews-items news-items">
+					<div class="reviews-item news-item">
+						<div class="news-item-desc">
+							<span>12.01.2023</span>
+							Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
+						</div>
+					</div>
+					<div class="reviews-item news-item">
+						<div class="news-item-desc">
+							<span>12.01.2023</span>
+							Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
+						</div>
+					</div>
+					<div class="reviews-item news-item">
+						<div class="news-item-desc">
+							<span>12.01.2023</span>
+							Награды «Лучшая среда технологического развития» и «Лучший  предметный кружок»! 
+						</div>
+					</div>
+				</div>
             </div>
         </div>
     </div>
-    <div class="reviews">
+    <div class="page reviews" id="slider-2">
         <div class="reviews-title">отзывы родителей</div>
         <div class="reviews-wrapper">
         <div class="reviews-items">
@@ -192,5 +310,9 @@
             <div class="footer-copy">&copy; цмит призма</div>
         </div>
     </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/script.js"></script> 
 </body>
 </html>

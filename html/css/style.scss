@@ -717,6 +717,40 @@ new scss
             font-weight: bold;
         }
     }
+    &_block {
+        &-start {
+            justify-content: flex-start;
+            align-items: self-start;
+            width: 35%;
+            &:first-child {
+                justify-content: flex-end;
+                align-items: self-end;
+                padding-right: 0;
+                padding-bottom: 40px;
+            }
+            .block {
+                &-yout {
+                    margin-bottom: 30px;
+                }
+            }
+            &:first-child {
+                width: 52%;
+                background: url(../img/gal-bot-bg.png) left bottom no-repeat;
+                display: flex;
+                a{
+                    width: 30%;
+                }
+                img{
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+        &-bg {
+            background: url(../img/gal-top-bg.png) right top no-repeat;
+        }
+        
+    }
 }
 
 

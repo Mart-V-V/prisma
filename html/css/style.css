@@ -741,6 +741,35 @@ new scss
   font-size: calc(14px + 16 * (100vw - 320px) / 1580);
   font-weight: bold;
 }
+.less_block-start {
+  justify-content: flex-start;
+  align-items: self-start;
+  width: 35%;
+}
+.less_block-start:first-child {
+  justify-content: flex-end;
+  align-items: self-end;
+  padding-right: 0;
+  padding-bottom: 40px;
+}
+.less_block-start .block-yout {
+  margin-bottom: 30px;
+}
+.less_block-start:first-child {
+  width: 52%;
+  background: url(../img/gal-bot-bg.png) left bottom no-repeat;
+  display: flex;
+}
+.less_block-start:first-child a {
+  width: 30%;
+}
+.less_block-start:first-child img {
+  border: none;
+  box-shadow: none;
+}
+.less_block-bg {
+  background: url(../img/gal-top-bg.png) right top no-repeat;
+}
 
 .footer-soc {
   display: flex;

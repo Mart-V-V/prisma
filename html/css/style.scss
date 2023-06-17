@@ -113,8 +113,16 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: end;
         margin-top: 30px;
         width: 100%;
+        div {
+            display: flex;
+            align-items: center;
+            &:first-child {
+                padding-left: 60px;
+            }
+        }
         a {
             font-size: calc(14px + (25 - 14) * ((100vw - 600px) / (1900 - 600)));;
             color: #0b0a0a;
@@ -147,13 +155,42 @@ body {
     display: none;
     @media (max-width: 1024px) {
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50px;
         position: absolute;
         right: 15px;
         top: 10px;
         box-shadow: 0px 0px 15px rgba(0,0,0,.6);
+    }
+    span {
+        width: 40px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 2px;
+        margin-top: 20px;
+        &::after {
+            content: '';
+            width: 40px;
+            height: 5px;
+            display: block;
+            position: absolute;
+            top: -14px;
+            background-color: #fff;
+            border-radius: 2px;
+        }
+        &::before {
+            content: '';
+            width: 40px;
+            height: 5px;
+            display: block;
+            position: absolute;
+            top: 14px;
+            background-color: #fff;
+            border-radius: 2px;
+        }
     }
 }
 
@@ -509,6 +546,10 @@ body {
     flex-direction: row;
     padding: 30px 42px;
     background: #e8007a;
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;;
+        align-items: center;
+    }
     &-left {
         width: 30%;
 
@@ -550,8 +591,57 @@ body {
     top: 0;
     z-index: 10;
     background: #fff;
+    padding-bottom: 50px;
     &.active {
-        display:block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .mobile-burger {
+            left: 30px;
+            top: 30px;
+            span {
+                background: none;
+                &::after {
+                    transform: rotate(50grad);
+                    top: 0;
+                }
+                &::before {
+                    transform: rotate(-50grad);
+                    top: 0;
+                }
+            }
+        }
+        .logo {
+            margin-top: 40px;
+            img {
+                width: 25vw;
+            }
+        }
+        .menu-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+            li {
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .soc_ico {
+        display: flex;
+        align-items: center;
+        a {
+            margin: 0 10px;
+        }
+    }
+    .mob_phone {
+        font-size: calc(14px + 48*(100vw - 320px)/1580);
+        font-weight: 700;
+        color: #433a3a;
+        text-transform: uppercase;
+        margin: 30px 0;
     }
 }
 
@@ -658,7 +748,6 @@ body {
     }
     &-left {
         width: 50%;
-        display: flex;
         justify-content: flex-end;
         padding-right: 60px;
         img {
@@ -753,7 +842,6 @@ new scss
             }
             &:first-child {
                 justify-content: flex-end;
-                align-items: self-end;
                 padding-right: 0;
                 padding-bottom: 40px;
                 width: 52%;
@@ -781,6 +869,9 @@ new scss
                         justify-content: center;
                         margin-top: 30px;
                         margin-bottom: 0px;
+                    }
+                    img {
+                        width: 100%;
                     }
                 }
             }

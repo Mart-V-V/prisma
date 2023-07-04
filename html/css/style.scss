@@ -773,10 +773,6 @@ body {
     }
 }
 
-/*
-new scss
-@import "new.scss";
-*/
 
 .header {
     &.no_pos {
@@ -910,5 +906,67 @@ new scss
         a:not(:last-child) {
             margin-right: 10px;
         }
+    }
+}
+
+
+.shedule {
+    &_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: calc(10px + (100 - 10) * ((100vw - 320px) / (1900 - 320)));;
+        h2 {
+            font-size: 26px;
+            color: #b9056f;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #433a3a;
+            font-size: 16px;
+            margin: 80px 0;
+        }
+    }
+    &_item {
+        h3 {
+            font-size: 20px;
+            color: #192e4d;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    &-desc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        b {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &-left {
+        color: #433a3a;
+        font-size: 16px;
+    }
+    &-right {
+        width: 120px;
+        color: #433a3a;
+        font-size: 16px;
+    }
+    &_price {
+        color: #b9056f;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &-marg {
+        margin-top: 60px;
     }
 }

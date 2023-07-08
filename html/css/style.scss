@@ -806,6 +806,7 @@ body {
                 height: 298px;
                 border-radius: 150px;
                 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+                border: none;
             }
             .less {
                 &-desc {
@@ -943,6 +944,34 @@ body {
             font-size: 16px;
             margin: 80px 0;
         }
+        &__min {
+            p {
+                margin: 20px 0;
+            }
+        }
+        &--lesson {
+            margin: 40px 0;
+            .shedule-item {
+                display: flex;
+                width: 20%;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    margin-bottom: 10px;
+                }
+                .img-shad {
+                    box-shadow: 0 0 10px rgba(0,0,0,1);
+                    border-radius: 12px;
+                }
+            }
+        }
+        &.--lesson {
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #433a3a;
+            }
+        }
     }
     &-item {
         h3 {
@@ -953,6 +982,12 @@ body {
             text-align: center;
             width: 100%;
             margin-bottom: 15px;
+        }
+        &__text {
+            text-align: center;
+            font-size: 16px;
+            color: #433a3a;
+            font-weight: normal;;
         }
     }
     &-desc {
@@ -992,6 +1027,15 @@ body {
                 color: #433a3a;
                 text-transform: uppercase;
                 font-weight: bold;
+            }
+        }
+        &-right {
+            h3 {
+                font-size: 30px;
+                color: #433a3a;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 10px;
             }
         }
     }
@@ -1058,4 +1102,76 @@ body {
             }
         }
     }
+}
+
+.akcent {
+    &-items {
+        display: flex;
+        flex-direction: row;
+        &--two {
+            flex-direction: row-reverse;
+        }
+    }
+    &-item {
+        &.__back {
+            min-width: 293px;
+            max-width: 400px;
+            width: 100%;
+            height: 293px;
+            display: flex;
+            background: url(../img/akcent.png) center center no-repeat;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        &.__text {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: normal;
+            color: #433a3a;
+        }
+        &.__back--two {
+            min-width: 322px;
+            max-width: 400px;
+            width: 100%;
+            height: 322px;
+            display: flex;
+            background: url(../img/akcent-2.png) center center no-repeat;
+            font-size: 24px;
+            color: #bb0965;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        &.__text--two {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: normal;
+            color: #433a3a;
+        }
+    }
+}
+
+.swiper {
+    width: 512px;
+    height: 391px;
+    img {
+        border: none;
+        border-radius: 0;
+    }
+}
+.swiper-pagination-bullet {
+    background-color: #bb0965 !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #ef7900 !important;
 }

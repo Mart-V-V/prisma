@@ -78,5 +78,5 @@ const swiper3 = new Swiper('#swipe-3', {
       el: '.swiper-scrollbar',
     },
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 10,
 });

@@ -28,9 +28,16 @@ body {
     background: rgba($color: #fff, $alpha: .87);
     &_left {
         padding: 5px 54px;
+        @media (max-width: 600px) {
+            padding: 5px;
+        }
         a {
             img {
                 max-height: 168px;
+                @media (max-width: 600px){
+                    width: 20vw;
+                    max-height: fit-content;
+                }
             }
         }
     }
@@ -133,8 +140,11 @@ body {
         @media (max-width: 1024px) {
             flex-direction: column;
             margin-top: 0px;
-            align-items: self-start;
+            align-items: center;
             margin-top: 40px;
+            position: absolute;
+            width: 100vw;
+            left: 0;
         }
     }
     &.pages {
@@ -146,7 +156,7 @@ body {
     color: #fff !important;
     font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1900 - 320)));
     font-weight: 700;
-    padding: 8px 11px 11px 11px;
+    padding: 5px 11px 11px 11px;
     border-radius: 15px;
     text-transform: uppercase;
     background: linear-gradient(45deg, #850ab4, #ed8006);

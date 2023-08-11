@@ -80,3 +80,27 @@ const swiper3 = new Swiper('#swipe-3', {
     slidesPerView: 3,
     spaceBetween: 10,
 });
+
+
+
+const swiper4 = new Swiper('#swipe-4', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: false,
+  slidesPerView: 3,
+  spaceBetween: 10,
+});

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Prisma</title>
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
     <link rel="stylesheet" href="css/simple-adaptive-slider.css">
     <!-- Подключаем JS слайдера -->
     <script defer src="js/simple-adaptive-slider.js"></script>
@@ -145,31 +149,27 @@
             </div>
         </div>
     </div>
-    <div class="block_art" id="slider-3">
-        <div class="reviews">
-            <div class="reviews-wrapper">
-            <div class="reviews-items">
-                <div class="reviews-item">
-                    <div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div>
-                </div>
-                <div class="reviews-item">
-                    <div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div>
-                </div>
-				
-                <div class="reviews-item">
-                    <div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div>
-                </div>
-                <div class="reviews-item">
-                    <div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div>
-                </div>
-                <div class="reviews-item">
-                    <div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div>
-                </div>
-                <div class="reviews-item">
-                    <div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div>
-                </div>
+    <div class="block_art">
+        <div class="swiper" id="swipe-4">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div></div>
+                <div class="swiper-slide"><div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div></div>
+                <div class="swiper-slide"><div class="block_art-item art1">Собственная прилегающая территория, арт-мастерские, новейшее оборудование.</div></div>
+                <div class="swiper-slide"><div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div></div>
+                <div class="swiper-slide"><div class="block_art-item art2">Большой выбор кружков для детей всех возрастов: от раннего развития до программирования и схемотехники.</div></div>
+                <div class="swiper-slide"><div class="block_art-item art3">Мы разработали уникальные инженерные кружки и знакомим детей с инновационным оборудованием.</div></div>
             </div>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
     <div class="block_grid">
@@ -323,6 +323,6 @@
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="js/script.js"></script> 
+<script src="js/script.js"></script>
 </body>
 </html>
